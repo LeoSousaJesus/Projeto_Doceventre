@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    font-weight: 600;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #111;
+    color: #E0E0E0;  /* Cor da fonte mais clara */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 600px;
+    width: 100%;
+    height: 100px;
+}
+
+nav .logo {
+    font-size: 2rem;
+    background: -webkit-linear-gradient(120deg, #FFD700, #FF4500);  /* Gradiente amarelo para vermelho */
+    -webkit-background-clip: text;
+    background-clip: text;  /* Propriedade padrão adicionada */
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    font-size: 1.2rem;
+}
+
+nav a {
+    background: -webkit-linear-gradient(120deg, #FFD700, #FF4500);  /* Gradiente amarelo para vermelho */
+    -webkit-background-clip: text;
+    background-clip: text;  /* Propriedade padrão adicionada */
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    color: #E0E0E0;  /* Cor da fonte mais clara */
+}
+
+nav a:hover {
+    border-bottom: 2px solid #FF4500;  /* Vermelho */
+    transition: 1s;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+}
+
+.content img {
+    width: 25rem;
+    background: linear-gradient(#111, #111);  /* Gradiente amarelo para vermelho */
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
+}
+
+.introduction {
+    background: -webkit-linear-gradient(120deg, #FFD700, #FF4500);  /* Gradiente amarelo para vermelho */
+    -webkit-background-clip: text;
+    background-clip: text;  /* Propriedade padrão adicionada */
+    -webkit-text-fill-color: transparent;
+    width: 300px;
+    height: 400px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 200px;
+    text-align: justify;  /* Adicionado para melhorar a apresentação do texto */
+}
+
+#scrollTopBtn {
+    display: none;  /* Inicialmente escondido */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    border: none;
+    outline: none;
+    background-color: #FFD700;  /* Amarelo */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#scrollTopBtn:hover {
+    background-color: #FF4500;  /* Vermelho */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

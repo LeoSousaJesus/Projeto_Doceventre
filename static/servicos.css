@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    font-weight: 600;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #111;
+    color: #E0E0E0;  /* Cor da fonte mais clara */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #222;
+}
+
+nav .logo {
+    font-size: 2rem;
+    background: -webkit-linear-gradient(120deg, #FFD700, #FF4500);  /* Gradiente amarelo para vermelho */
+    -webkit-background-clip: text;
+    background-clip: text;  /* Propriedade padrão adicionada */
+    -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #E0E0E0;  /* Cor da fonte mais clara */
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #FF4500;  /* Vermelho */
+    transition: 1s;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service {
+    flex: 1 1 calc(33% - 40px); /* Três colunas */
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: left;
+}
+
+.service h3 {
+    background: -webkit-linear-gradient(120deg, #FFD700, #FF4500);  /* Gradiente amarelo para vermelho */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+.service p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+#scrollTopBtn {
+    display: none;  /* Inicialmente escondido */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    border: none;
+    outline: none;
+    background-color: #FFD700;  /* Amarelo */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#scrollTopBtn:hover {
+    background-color: #FF4500;  /* Vermelho */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
