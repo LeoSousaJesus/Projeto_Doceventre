@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 
 st.set_page_config(layout="wide")
 
-df = pd.read_csv("doceventre.csv", sep=",", decimal=" ")
+df = pd.read_csv("datasets\doceventre.csv", sep=",", decimal=" ")
 df["Dia da Contratação"] = pd.to_datetime(df["Dia da Contratação"])
 df = df.sort_values("Dia da Contratação")
 
